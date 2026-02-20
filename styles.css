@@ -34,9 +34,29 @@ body, html{
 .results{ 
     grid-area: results; 
 }
-.calculator > div{
+.calculator > .grid-elem{
     border-radius: 10px;
     border-color: #f4261d;
     border-width: 2px;
     border-style: dashed;
+    background: transparent;
+}
+.grid-elem input{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: inherit;
+  text-align: center;
+}
+.operation{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-align: center;
 }
