@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Calculator</title>
 </head>
 <body>
         <div class="calculator">
-            <div class="operand-1 grid-elem">
+            <div id="operand-1" class="grid-elem">
                 <input type="text">
             </div>
-            <select class="operation grid-elem">
+            <select class="grid-elem" id="operation">
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="*">*</option>
                 <option value="/">/</option>
             </select>
-            <div class="operand-2 grid-elem">
+            <div id="operand-2" class="grid-elem">
                 <input type="text">
             </div>
 
-            <button class="calculate grid-elem">подсчитать</button>
+            <button id="calculate" class="grid-elem">подсчитать</button>
 
-            <div class="results grid-elem"></div>
+            <div id="results" class="grid-elem"></div>
         </div>
 </body>
 </html>
