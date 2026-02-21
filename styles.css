@@ -16,6 +16,9 @@
      background-color: #baffc2;
      border-radius: 8px;
      height: 40%;
+
+     min-width: 150px;
+     min-height: 260px;
 }
 body, html{
     height: 100%;
@@ -40,6 +43,7 @@ body, html{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+    min-width: 130px;
 }
 #results{ 
     grid-area: results; 
@@ -67,4 +71,26 @@ body, html{
 }
 .current-result{
     opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    grid-template-areas:
+      "operand-1"
+      "operation"
+      "operand-2"
+      "calculate"
+      "results";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: auto;
+    min-height: 400px;
+    gap: 10px;
+    padding: 15px;
+    min-width: 300px;
+  }
+  
+  .grid-elem, .operation {
+    font-size: smaller;
+  }
 }
